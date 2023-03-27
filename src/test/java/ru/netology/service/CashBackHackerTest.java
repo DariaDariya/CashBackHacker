@@ -7,15 +7,16 @@ import static org.testng.Assert.*;
 
 public class CashBackHackerTest {
 
-    @org.testng.annotations.Test
+    @Test
     public void shouldRemainAdd100IfAmount900() {
         CashBackHacker service = new CashBackHacker();
         int amount = 900;
         int actual = service.remain(900);
         int expected = 100;
         Assert.assertEquals(actual, expected);
-        }
-    @org.testng.annotations.Test
+    }
+
+    @Test
     public void shouldRemainAdd700IfAmount300() {
         CashBackHacker service = new CashBackHacker();
         int amount = 300;
@@ -23,7 +24,8 @@ public class CashBackHackerTest {
         int expected = 700;
         Assert.assertEquals(actual, expected);
     }
-    @org.testng.annotations.Test
+
+    @Test
     public void shouldRemainAdd1000IfAmount0() {
         CashBackHacker service = new CashBackHacker();
         int amount = 0;
@@ -31,7 +33,8 @@ public class CashBackHackerTest {
         int expected = 1000;
         Assert.assertEquals(actual, expected);
     }
-    @org.testng.annotations.Test
+
+    @Test
     public void shouldRemainAdd600IfAmount400() {
         CashBackHacker service = new CashBackHacker();
         int amount = 400;
@@ -39,4 +42,4 @@ public class CashBackHackerTest {
         int expected = 600;
         Assert.assertEquals(actual, expected);
     }
-    }
+}
