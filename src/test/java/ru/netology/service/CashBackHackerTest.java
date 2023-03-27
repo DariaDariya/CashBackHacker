@@ -32,11 +32,11 @@ public class CashBackHackerTest {
         Assert.assertEquals(actual, expected);
     }
     @org.testng.annotations.Test
-    public void shouldRemainAdd0IfAmount1000() {
+    public void shouldRemainAdd600IfAmount400() {
         CashBackHacker service = new CashBackHacker();
-        int amount = 1000;
-        int actual = service.remain(amount);
-        int expected = 0;
+        int amount = 400;
+        int actual = service.remain(400);
+        int expected = 600;
         Assert.assertEquals(actual, expected);
     }
     }
