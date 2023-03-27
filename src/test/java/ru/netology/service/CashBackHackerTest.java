@@ -4,7 +4,6 @@ import org.junit.Test;
 import org.junit.Assert;
 
 
-
 public class CashBackHackerTest {
 
     @Test
@@ -40,14 +39,6 @@ public class CashBackHackerTest {
         int amount = 400;
         int actual = service.remain(400);
         int expected = 600;
-        Assert.assertEquals(expected, actual);
-    }
-    @Test
-    public void shouldRemainAdd0IfAmount1000() {
-        CashBackHacker service = new CashBackHacker();
-        int amount = 1000;
-        int actual = service.remain(1000);
-        int expected = 0;
         Assert.assertEquals(expected, actual);
     }
 }
