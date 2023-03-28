@@ -34,6 +34,15 @@ public class CashBackHackerTest {
     }
 
     @Test
+    public void shouldRemainAdd0IfAmount1000() {
+        CashBackHacker service = new CashBackHacker();
+        int amount = 1000;
+        int actual = service.remain(1000);
+        int expected = 0;
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
     public void shouldRemainAdd600IfAmount400() {
         CashBackHacker service = new CashBackHacker();
         int amount = 400;
